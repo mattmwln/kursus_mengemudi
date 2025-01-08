@@ -159,3 +159,99 @@ JOIN `instructors` ON `instructors`.`id` = `schedules`.`instructor_id`', [], fal
 11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
 12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
 13 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2025-01-08 02:08:00 --> Call to undefined method App\Models\ScheduleModel::getSchedulesWithCourseAndInstructor
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\ScheduleController.php(28): CodeIgniter\Model->__call('getSchedulesWithCourseAndInstructor', [])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\ScheduleController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ScheduleController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2025-01-08 02:09:43 --> Undefined variable $data
+in APPPATH\Controllers\ScheduleController.php on line 30.
+ 1 APPPATH\Controllers\ScheduleController.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\ScheduleController.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\ScheduleController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ScheduleController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2025-01-08 02:10:11 --> Call to undefined method App\Models\ScheduleModel::getAll
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\ScheduleController.php(28): CodeIgniter\Model->__call('getAll', [])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\ScheduleController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ScheduleController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2025-01-08 02:18:30 --> Undefined array key "course_name"
+in APPPATH\Views\admin\schedules\index.php on line 30.
+ 1 APPPATH\Views\admin\schedules\index.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "course_name"', 'APPPATH\\Views\\admin\\schedules\\index.php', 30)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\schedules\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/schedules/index', [], true)
+ 5 APPPATH\Controllers\ScheduleController.php(30): view('admin/schedules/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\ScheduleController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ScheduleController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2025-01-08 02:20:56 --> Undefined array key "name"
+in APPPATH\Views\admin\schedules\index.php on line 30.
+ 1 APPPATH\Views\admin\schedules\index.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'APPPATH\\Views\\admin\\schedules\\index.php', 30)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\schedules\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/schedules/index', [], true)
+ 5 APPPATH\Controllers\ScheduleController.php(30): view('admin/schedules/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\ScheduleController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ScheduleController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2025-01-08 02:21:35 --> Attempt to read property "getCourse" on array
+in APPPATH\Views\admin\schedules\index.php on line 30.
+ 1 APPPATH\Views\admin\schedules\index.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "getCourse" on array', 'APPPATH\\Views\\admin\\schedules\\index.php', 30)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\schedules\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/schedules/index', [], true)
+ 5 APPPATH\Controllers\ScheduleController.php(30): view('admin/schedules/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\ScheduleController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ScheduleController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2025-01-08 02:21:57 --> Attempt to read property "getCourse" on array
+in APPPATH\Views\admin\schedules\index.php on line 30.
+ 1 APPPATH\Views\admin\schedules\index.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "getCourse" on array', 'APPPATH\\Views\\admin\\schedules\\index.php', 30)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\schedules\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/schedules/index', [], true)
+ 5 APPPATH\Controllers\ScheduleController.php(30): view('admin/schedules/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\ScheduleController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ScheduleController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2025-01-08 02:24:59 --> Undefined variable $schedules
+in APPPATH\Controllers\ScheduleController.php on line 28.
+ 1 APPPATH\Controllers\ScheduleController.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $schedules', 'APPPATH\\Controllers\\ScheduleController.php', 28)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\ScheduleController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ScheduleController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2025-01-08 02:26:11 --> Undefined variable $schedules
+in APPPATH\Controllers\ScheduleController.php on line 28.
+ 1 APPPATH\Controllers\ScheduleController.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $schedules', 'APPPATH\\Controllers\\ScheduleController.php', 28)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\ScheduleController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ScheduleController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2025-01-08 02:27:04 --> Undefined variable $schedules
+in APPPATH\Controllers\ScheduleController.php on line 28.
+ 1 APPPATH\Controllers\ScheduleController.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $schedules', 'APPPATH\\Controllers\\ScheduleController.php', 28)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\ScheduleController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ScheduleController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

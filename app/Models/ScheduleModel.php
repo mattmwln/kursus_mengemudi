@@ -13,12 +13,21 @@ class ScheduleModel extends Model
     protected $allowedFields = ['course_id', 'instructor_id', 'schedule_date', 'schedule_time'];
     protected $useTimestamps = true;
 
-    public function getSchedulesWithCourseAndInstructor()
+    public function getCourse($scheduleId)
     {
-        // Melakukan join dengan tabel courses dan instructors
-        return $this->select('schedules.id, courses.name as course_name, instructors.name as instructor_name, schedules.schedule_date, schedules.schedule_time')
-                    ->join('courses', 'courses.id = schedules.course_id')
-                    ->join('instructors', 'instructors.id = schedules.instructor_id')
-                    ->findAll();
+        return $this->db->table('courses')
+                        ->select('name')
+                        ->where('id', $scheduleId)
+                        ->get()
+                        ->getRow();
+    }
+
+    public function getInstructor($instructorId)
+    {
+        return $this->db->table('instructors')
+                        ->select('name')
+                        ->where('id', $instructorId)
+                        ->get()
+                        ->getRow();
     }
 }

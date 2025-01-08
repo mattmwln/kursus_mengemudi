@@ -27,8 +27,8 @@
                 <?php foreach ($schedules as $schedule): ?>
                     <tr class="table-row">
                         <td class="px-4 py-2 text-sm"><?= $no++; ?></td>
-                        <td class="px-4 py-2 text-sm"><?= $schedule['course_name']; ?></td>
-                        <td class="px-4 py-2 text-sm"><?= $schedule['instructor_name']; ?></td>
+                        <td class="px-4 py-2 text-sm"><?= esc($schedule['getCourse']->name); ?></td>
+                        <td class="px-4 py-2 text-sm"><?= esc($schedule['getInstructor']->name); ?></td>
                         <td class="px-4 py-2 text-sm"><?= $schedule['schedule_date']; ?></td>
                         <td class="px-4 py-2 text-sm"><?= $schedule['schedule_time']; ?></td>
                         <td class="px-4 py-2">

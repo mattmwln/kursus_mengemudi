@@ -24,8 +24,14 @@ class ScheduleController extends Controller
     {
         $scheduleModel = new ScheduleModel();
         
-        // Ambil jadwal dengan nama kursus dan instruktur
-        $data['schedules'] = $scheduleModel->getSchedulesWithCourseAndInstructor();
+        $schedules = $scheduleModel->findAll();
+        // Tambahkan relasi manual ke setiap jadwal
+        foreach ($schedules as &$schedule) {
+            $schedule['getCourse'] = $scheduleModel->getCourse($schedule['course_id']);
+            $schedule['getInstructor'] = $scheduleModel->getInstructor($schedule['instructor_id']);
+        }
+
+        $data['schedules'] = $schedules;
 
         return view('admin/schedules/index', $data);
     }
