@@ -4,10 +4,11 @@ namespace App\Database\Migrations;
 
 use CodeIgniter\Database\Migration;
 
-class CreateSchedulesTable extends Migration
+class CreateRegisterTable extends Migration
 {
     public function up()
     {
+        
         $this->forge->addField([
             'id' => [
                 'type'           => 'INT',
@@ -15,19 +16,33 @@ class CreateSchedulesTable extends Migration
                 'unsigned'       => true,
                 'auto_increment' => true,
             ],
-            'course_id' => [
+            'schedule_id' => [
                 'type'       => 'INT',
                 'unsigned'   => true, // Harus unsigned agar sesuai dengan kolom id di tabel course
             ],
-            'instructor_id' => [
-                'type'       => 'INT',
-                'unsigned'   => true, // Harus unsigned agar sesuai dengan kolom id di tabel instructor
+            'name' => [
+                'type' => 'VARCHAR',
+                'constraint' => 255,
             ],
-            'schedule_date' => [
-                'type'       => 'DATE', // Gunakan DATE jika ini hanya tanggal
+            'address' => [
+                'type' => 'TEXT',
             ],
-            'schedule_time' => [
-                'type'       => 'TIME', // Gunakan TIME jika ini hanya waktu
+            'gender' => [
+                'type' => "ENUM('Laki-laki', 'Perempuan')",
+                'null' => false,
+            ],
+            'no_hp' => [
+                'type' => 'VARCHAR',
+                'constraint' => 25,
+            ],
+            'payment_image' => [
+                'type' => 'VARCHAR',
+                'constraint' => 255
+            ],
+            'status' => [
+                'type' => "ENUM('PENDING', 'PROSES','SELESAI')",
+                'null' => false,
+                'default' => 'PENDING'
             ],
             'created_at' => [
                 'type' => 'DATETIME',
@@ -43,16 +58,14 @@ class CreateSchedulesTable extends Migration
         $this->forge->addKey('id', true);
         
         // Tambahkan foreign key untuk course_id dan instructor_id
-        $this->forge->addForeignKey('course_id', 'courses', 'id', 'CASCADE', 'CASCADE');
-        $this->forge->addForeignKey('instructor_id', 'instructors', 'id', 'CASCADE', 'CASCADE');
+        $this->forge->addForeignKey('schedule_id', 'schedules', 'id', 'CASCADE', 'CASCADE');
         
         // Buat tabel
-        $this->forge->createTable('schedules');
-        
+        $this->forge->createTable('registers');
     }
 
     public function down()
     {
-        $this->forge->dropTable('schedules');
+        $this->forge->dropTable('registers');
     }
 }

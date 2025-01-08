@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Controllers;
+namespace App\Controllers\Admin;
 
 use CodeIgniter\Controller;
 
-class AdminController extends BaseController
+class AdminController extends Controller
 {
     public function dashboard()
     {
