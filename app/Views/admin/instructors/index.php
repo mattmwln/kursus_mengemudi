@@ -2,8 +2,12 @@
 
 <?= $this->section('content'); ?>
 <div class="container mx-auto p-6">
-    <h1 class="text-2xl font-bold mb-4">Daftar Instruktur</h1>
-    <a href="<?= base_url('admin/instructors/create'); ?>" class="btn-primary mb-4 inline-block">Tambah Instruktur</a>
+    <h1 class="text-2xl font-bold mb-4">
+        <i class="bi bi-person-badge-fill mr-2"></i>Daftar Instruktur
+    </h1>
+    <a href="<?= base_url('admin/instructors/create'); ?>" class="btn-primary mb-4 inline-block">
+        <i class="bi bi-person-plus-fill mr-1"></i>Tambah Instruktur
+    </a>
     <div class="table-container">
         <table class="w-full text-sm text-left text-gray-700">
             <thead class="table-header">
@@ -25,8 +29,15 @@
                         <td class="px-4 py-2"><?= $instructor['phone'] ?></td>
                         <td class="px-4 py-2"><?= $instructor['expertise'] ?></td>
                         <td class="px-4 py-2 flex gap-2">
-                            <a href="<?= base_url('admin/instructors/edit/' . $instructor['id']); ?>" class="btn-secondary btn-sm">Edit</a>
-                            <a href="<?= base_url('admin/instructors/delete/' . $instructor['id']); ?>" class="btn-danger btn-sm" onclick="return confirm('Yakin ingin menghapus instruktur ini?')">Hapus</a>
+                            <a href="<?= base_url('admin/instructors/edit/' . $instructor['id']); ?>" 
+                               class="btn-primary btn-sm">
+                                <i class="bi bi-pencil mr-1"></i>
+                            </a>
+                            <a href="<?= base_url('admin/instructors/delete/' . $instructor['id']); ?>" 
+                               class="btn-danger btn-sm"
+                               onclick="return confirm('Yakin ingin menghapus instruktur ini?')">
+                                <i class="bi bi-trash mr-1"></i>
+                            </a>
                         </td>
                     </tr>
                 <?php endforeach; ?>

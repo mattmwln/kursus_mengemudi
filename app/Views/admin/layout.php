@@ -6,6 +6,7 @@
     <title><?= $title ?? 'Admin Dashboard'; ?></title>
     <link rel="stylesheet" href="<?= base_url('adminlte/dist/css/adminlte.min.css'); ?>">
     <link rel="stylesheet" href="<?= base_url('adminlte/plugins/fontawesome-free/css/all.min.css'); ?>">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css">
     <link href="<?= base_url('css/output.css'); ?>" rel="stylesheet">
 </head>
 <body class="hold-transition sidebar-mini layout-fixed bg-gray-100">
@@ -13,7 +14,7 @@
 
     <div class="wrapper flex">
         <!-- Sidebar -->
-        <?= $this->include('admin/partials/sidebar'); ?>
+        
 
         <!-- Content Wrapper -->
         <div class="content-wrapper flex-1 p-6">
