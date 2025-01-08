@@ -1,0 +1,736 @@
+CRITICAL - 2025-01-07 05:31:33 --> auth filter must have a matching alias defined.
+in SYSTEMPATH\Filters\Filters.php on line 340.
+ 1 SYSTEMPATH\Filters\Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('auth')
+ 2 SYSTEMPATH\CodeIgniter.php(433): CodeIgniter\Filters\Filters->enableFilter('auth', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2025-01-07 05:32:13 --> auth filter must have a matching alias defined.
+in SYSTEMPATH\Filters\Filters.php on line 340.
+ 1 SYSTEMPATH\Filters\Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('auth')
+ 2 SYSTEMPATH\CodeIgniter.php(433): CodeIgniter\Filters\Filters->enableFilter('auth', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2025-01-07 05:35:12 --> auth filter must have a matching alias defined.
+in SYSTEMPATH\Filters\Filters.php on line 340.
+ 1 SYSTEMPATH\Filters\Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('auth')
+ 2 SYSTEMPATH\CodeIgniter.php(433): CodeIgniter\Filters\Filters->enableFilter('auth', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2025-01-07 05:35:13 --> auth filter must have a matching alias defined.
+in SYSTEMPATH\Filters\Filters.php on line 340.
+ 1 SYSTEMPATH\Filters\Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('auth')
+ 2 SYSTEMPATH\CodeIgniter.php(433): CodeIgniter\Filters\Filters->enableFilter('auth', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2025-01-07 05:52:29 --> Error connecting to the database: Access denied for user ''@'localhost' (using password: NO)
+CRITICAL - 2025-01-07 05:52:29 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 415.
+ 1 SYSTEMPATH\Database\BaseConnection.php(585): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+AND `password` = :password:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(249): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(622): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\AuthController.php(25): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AuthController->loginProcess()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2025-01-07 05:52:57 --> Error connecting to the database: Access denied for user ''@'localhost' (using password: NO)
+CRITICAL - 2025-01-07 05:52:57 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 415.
+ 1 SYSTEMPATH\Database\BaseConnection.php(585): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+AND `password` = :password:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(249): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(622): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\AuthController.php(25): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AuthController->loginProcess()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2025-01-07 06:02:05 --> Creation of dynamic property App\Controllers\AdminController::$session is deprecated
+in APPPATH\Controllers\AdminController.php on line 11.
+ 1 APPPATH\Controllers\AdminController.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\AdminController::$session is deprecated', 'APPPATH\\Controllers\\AdminController.php', 11)
+ 2 SYSTEMPATH\CodeIgniter.php(860): App\Controllers\AdminController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(459): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2025-01-07 06:02:06 --> Creation of dynamic property App\Controllers\AdminController::$session is deprecated
+in APPPATH\Controllers\AdminController.php on line 11.
+ 1 APPPATH\Controllers\AdminController.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\AdminController::$session is deprecated', 'APPPATH\\Controllers\\AdminController.php', 11)
+ 2 SYSTEMPATH\CodeIgniter.php(860): App\Controllers\AdminController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(459): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2025-01-07 06:02:07 --> Creation of dynamic property App\Controllers\AdminController::$session is deprecated
+in APPPATH\Controllers\AdminController.php on line 11.
+ 1 APPPATH\Controllers\AdminController.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\AdminController::$session is deprecated', 'APPPATH\\Controllers\\AdminController.php', 11)
+ 2 SYSTEMPATH\CodeIgniter.php(860): App\Controllers\AdminController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(459): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2025-01-07 06:02:08 --> Creation of dynamic property App\Controllers\AdminController::$session is deprecated
+in APPPATH\Controllers\AdminController.php on line 11.
+ 1 APPPATH\Controllers\AdminController.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\AdminController::$session is deprecated', 'APPPATH\\Controllers\\AdminController.php', 11)
+ 2 SYSTEMPATH\CodeIgniter.php(860): App\Controllers\AdminController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(459): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2025-01-07 06:02:08 --> Creation of dynamic property App\Controllers\AdminController::$session is deprecated
+in APPPATH\Controllers\AdminController.php on line 11.
+ 1 APPPATH\Controllers\AdminController.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\AdminController::$session is deprecated', 'APPPATH\\Controllers\\AdminController.php', 11)
+ 2 SYSTEMPATH\CodeIgniter.php(860): App\Controllers\AdminController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(459): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2025-01-07 06:02:09 --> Creation of dynamic property App\Controllers\AdminController::$session is deprecated
+in APPPATH\Controllers\AdminController.php on line 11.
+ 1 APPPATH\Controllers\AdminController.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\AdminController::$session is deprecated', 'APPPATH\\Controllers\\AdminController.php', 11)
+ 2 SYSTEMPATH\CodeIgniter.php(860): App\Controllers\AdminController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(459): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2025-01-07 06:02:09 --> Creation of dynamic property App\Controllers\AdminController::$session is deprecated
+in APPPATH\Controllers\AdminController.php on line 11.
+ 1 APPPATH\Controllers\AdminController.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\AdminController::$session is deprecated', 'APPPATH\\Controllers\\AdminController.php', 11)
+ 2 SYSTEMPATH\CodeIgniter.php(860): App\Controllers\AdminController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(459): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2025-01-07 06:02:14 --> Creation of dynamic property App\Controllers\AdminController::$session is deprecated
+in APPPATH\Controllers\AdminController.php on line 11.
+ 1 APPPATH\Controllers\AdminController.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\AdminController::$session is deprecated', 'APPPATH\\Controllers\\AdminController.php', 11)
+ 2 SYSTEMPATH\CodeIgniter.php(860): App\Controllers\AdminController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(459): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2025-01-07 06:04:05 --> Error connecting to the database: Access denied for user ''@'localhost' (using password: NO)
+CRITICAL - 2025-01-07 06:04:05 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 415.
+ 1 SYSTEMPATH\Database\BaseConnection.php(585): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+AND `password` = :password:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(249): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(622): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\AuthController.php(25): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AuthController->loginProcess()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2025-01-07 06:06:46 --> Error connecting to the database: Access denied for user ''@'localhost' (using password: NO)
+CRITICAL - 2025-01-07 06:06:46 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 415.
+ 1 SYSTEMPATH\Database\BaseConnection.php(585): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+AND `password` = :password:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(249): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(622): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\AuthController.php(25): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AuthController->loginProcess()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2025-01-07 09:22:25 --> Invalid file: admin/courses/index.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/courses/index.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/courses/index', [], true)
+ 3 APPPATH\Controllers\CourseController.php(20): view('admin/courses/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\CourseController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CourseController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2025-01-07 09:22:31 --> Invalid file: admin/courses/index.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/courses/index.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/courses/index', [], true)
+ 3 APPPATH\Controllers\CourseController.php(20): view('admin/courses/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\CourseController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CourseController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2025-01-07 09:25:09 --> Invalid file: admin/courses/index.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/courses/index.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/courses/index', [], true)
+ 3 APPPATH\Controllers\CourseController.php(20): view('admin/courses/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\CourseController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CourseController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2025-01-07 09:25:10 --> Invalid file: admin/courses/index.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/courses/index.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/courses/index', [], true)
+ 3 APPPATH\Controllers\CourseController.php(20): view('admin/courses/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\CourseController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CourseController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2025-01-07 09:25:54 --> Invalid file: admin/courses/index.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/courses/index.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/courses/index', [], true)
+ 3 APPPATH\Controllers\CourseController.php(22): view('admin/courses/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\CourseController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CourseController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2025-01-07 09:25:55 --> Invalid file: admin/courses/index.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/courses/index.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/courses/index', [], true)
+ 3 APPPATH\Controllers\CourseController.php(22): view('admin/courses/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\CourseController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CourseController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2025-01-07 09:30:14 --> Invalid file: admin/courses/index.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/courses/index.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/courses/index', [], true)
+ 3 APPPATH\Controllers\CourseController.php(22): view('admin/courses/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\CourseController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CourseController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2025-01-07 09:30:15 --> Invalid file: admin/courses/index.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/courses/index.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/courses/index', [], true)
+ 3 APPPATH\Controllers\CourseController.php(22): view('admin/courses/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\CourseController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CourseController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2025-01-07 09:30:28 --> Undefined variable $data
+in APPPATH\Controllers\AdminController.php on line 21.
+ 1 APPPATH\Controllers\AdminController.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\AdminController.php', 21)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AdminController->dashboard()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2025-01-07 09:31:53 --> Undefined variable $data
+in APPPATH\Controllers\AdminController.php on line 21.
+ 1 APPPATH\Controllers\AdminController.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\AdminController.php', 21)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AdminController->dashboard()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2025-01-07 09:31:55 --> Undefined variable $data
+in APPPATH\Controllers\AdminController.php on line 21.
+ 1 APPPATH\Controllers\AdminController.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\AdminController.php', 21)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AdminController->dashboard()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2025-01-07 09:31:55 --> Undefined variable $data
+in APPPATH\Controllers\AdminController.php on line 21.
+ 1 APPPATH\Controllers\AdminController.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\AdminController.php', 21)
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\AdminController->dashboard()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2025-01-07 09:32:57 --> Invalid file: admin/courses/index.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/courses/index.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/courses/index', [], true)
+ 3 APPPATH\Controllers\CourseController.php(22): view('admin/courses/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\CourseController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CourseController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2025-01-07 09:33:32 --> Invalid file: admin/courses/index.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/courses/index.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/courses/index', [], true)
+ 3 APPPATH\Controllers\CourseController.php(22): view('admin/courses/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\CourseController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CourseController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2025-01-07 09:36:17 --> Invalid file: admin/courses/index.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/courses/index.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/courses/index', [], true)
+ 3 APPPATH\Controllers\CourseController.php(22): view('admin/courses/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\CourseController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CourseController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2025-01-07 09:36:18 --> Invalid file: admin/courses/index.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/courses/index.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/courses/index', [], true)
+ 3 APPPATH\Controllers\CourseController.php(22): view('admin/courses/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\CourseController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CourseController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2025-01-07 09:36:19 --> Invalid file: admin/courses/index.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/courses/index.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/courses/index', [], true)
+ 3 APPPATH\Controllers\CourseController.php(22): view('admin/courses/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\CourseController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CourseController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2025-01-07 09:38:09 --> Invalid file: admin/courses/index.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/courses/index.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/courses/index', [], true)
+ 3 APPPATH\Controllers\CourseController.php(22): view('admin/courses/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\CourseController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CourseController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2025-01-07 09:38:10 --> Invalid file: admin/courses/index.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/courses/index.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/courses/index', [], true)
+ 3 APPPATH\Controllers\CourseController.php(22): view('admin/courses/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\CourseController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CourseController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2025-01-07 09:38:10 --> Invalid file: admin/courses/index.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/courses/index.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/courses/index', [], true)
+ 3 APPPATH\Controllers\CourseController.php(22): view('admin/courses/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\CourseController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CourseController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2025-01-07 09:38:16 --> Invalid file: admin/courses/index.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/courses/index.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/courses/index', [], true)
+ 3 APPPATH\Controllers\CourseController.php(22): view('admin/courses/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\CourseController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CourseController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2025-01-07 21:16:48 --> Unknown column 'name' in 'field list'
+CRITICAL - 2025-01-07 21:16:48 --> Unknown column 'name' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `courses` SET `name` = NULL, `description` = \'5 x pertemuan (10 jam)\', `price` = 700000, `updated_at` = \'2025-01-07 21:16:48\'
+WHERE `courses`.`id` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `courses` SET `name` = NULL, `description` = \'5 x pertemuan (10 jam)\', `price` = 700000, `updated_at` = \'2025-01-07 21:16:48\'
+WHERE `courses`.`id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `courses` SET `name` = NULL, `description` = \'5 x pertemuan (10 jam)\', `price` = 700000, `updated_at` = \'2025-01-07 21:16:48\'
+WHERE `courses`.`id` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2046): CodeIgniter\Database\BaseConnection->query('UPDATE `courses` SET `name` = :name:, `description` = :description:, `price` = :price:, `updated_at` = :updated_at:
+WHERE `courses`.`id` IN :courses.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(337): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(865): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\CourseController.php(64): CodeIgniter\Model->update('1', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\CourseController->update('1')
+10 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CourseController))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2025-01-07 21:16:57 --> Unknown column 'name' in 'field list'
+CRITICAL - 2025-01-07 21:16:57 --> Unknown column 'name' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `courses` SET `name` = NULL, `description` = \'5 x pertemuan (10 jam)\', `price` = 700000, `updated_at` = \'2025-01-07 21:16:57\'
+WHERE `courses`.`id` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `courses` SET `name` = NULL, `description` = \'5 x pertemuan (10 jam)\', `price` = 700000, `updated_at` = \'2025-01-07 21:16:57\'
+WHERE `courses`.`id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `courses` SET `name` = NULL, `description` = \'5 x pertemuan (10 jam)\', `price` = 700000, `updated_at` = \'2025-01-07 21:16:57\'
+WHERE `courses`.`id` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2046): CodeIgniter\Database\BaseConnection->query('UPDATE `courses` SET `name` = :name:, `description` = :description:, `price` = :price:, `updated_at` = :updated_at:
+WHERE `courses`.`id` IN :courses.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(337): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(865): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\CourseController.php(64): CodeIgniter\Model->update('1', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\CourseController->update('1')
+10 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CourseController))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2025-01-07 21:17:03 --> Unknown column 'name' in 'field list'
+CRITICAL - 2025-01-07 21:17:03 --> Unknown column 'name' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `courses` SET `name` = NULL, `description` = \'5 x pertemuan (10 jam)\', `price` = 700000, `updated_at` = \'2025-01-07 21:17:03\'
+WHERE `courses`.`id` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `courses` SET `name` = NULL, `description` = \'5 x pertemuan (10 jam)\', `price` = 700000, `updated_at` = \'2025-01-07 21:17:03\'
+WHERE `courses`.`id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `courses` SET `name` = NULL, `description` = \'5 x pertemuan (10 jam)\', `price` = 700000, `updated_at` = \'2025-01-07 21:17:03\'
+WHERE `courses`.`id` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2046): CodeIgniter\Database\BaseConnection->query('UPDATE `courses` SET `name` = :name:, `description` = :description:, `price` = :price:, `updated_at` = :updated_at:
+WHERE `courses`.`id` IN :courses.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(337): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(865): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\CourseController.php(64): CodeIgniter\Model->update('1', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\CourseController->update('1')
+10 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CourseController))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2025-01-07 21:17:12 --> Unknown column 'name' in 'field list'
+CRITICAL - 2025-01-07 21:17:12 --> Unknown column 'name' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `courses` SET `name` = NULL, `description` = \'5 x pertemuan (10 jam)\', `updated_at` = \'2025-01-07 21:17:12\'
+WHERE `courses`.`id` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `courses` SET `name` = NULL, `description` = \'5 x pertemuan (10 jam)\', `updated_at` = \'2025-01-07 21:17:12\'
+WHERE `courses`.`id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `courses` SET `name` = NULL, `description` = \'5 x pertemuan (10 jam)\', `updated_at` = \'2025-01-07 21:17:12\'
+WHERE `courses`.`id` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2046): CodeIgniter\Database\BaseConnection->query('UPDATE `courses` SET `name` = :name:, `description` = :description:, `updated_at` = :updated_at:
+WHERE `courses`.`id` IN :courses.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(337): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(865): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\CourseController.php(48): CodeIgniter\Model->update('1', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\CourseController->update('1')
+10 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CourseController))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2025-01-07 21:17:18 --> Unknown column 'name' in 'field list'
+CRITICAL - 2025-01-07 21:17:18 --> Unknown column 'name' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `courses` SET `name` = NULL, `description` = \'5 x pertemuan (10 jam)\', `updated_at` = \'2025-01-07 21:17:18\'
+WHERE `courses`.`id` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `courses` SET `name` = NULL, `description` = \'5 x pertemuan (10 jam)\', `updated_at` = \'2025-01-07 21:17:18\'
+WHERE `courses`.`id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `courses` SET `name` = NULL, `description` = \'5 x pertemuan (10 jam)\', `updated_at` = \'2025-01-07 21:17:18\'
+WHERE `courses`.`id` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2046): CodeIgniter\Database\BaseConnection->query('UPDATE `courses` SET `name` = :name:, `description` = :description:, `updated_at` = :updated_at:
+WHERE `courses`.`id` IN :courses.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(337): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(865): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\CourseController.php(48): CodeIgniter\Model->update('1', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\CourseController->update('1')
+10 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CourseController))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2025-01-07 21:28:24 --> Undefined array key "title"
+in APPPATH\Views\admin\courses\index.php on line 21.
+ 1 APPPATH\Views\admin\courses\index.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "title"', 'APPPATH\\Views\\admin\\courses\\index.php', 21)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\courses\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/courses/index', [], true)
+ 5 APPPATH\Controllers\CourseController.php(24): view('admin/courses/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\CourseController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CourseController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2025-01-07 21:28:28 --> Undefined array key "title"
+in APPPATH\Views\admin\courses\index.php on line 21.
+ 1 APPPATH\Views\admin\courses\index.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "title"', 'APPPATH\\Views\\admin\\courses\\index.php', 21)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\courses\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/courses/index', [], true)
+ 5 APPPATH\Controllers\CourseController.php(24): view('admin/courses/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\CourseController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CourseController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2025-01-07 21:29:19 --> Undefined array key "title"
+in APPPATH\Views\admin\courses\edit.php on line 8.
+ 1 APPPATH\Views\admin\courses\edit.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "title"', 'APPPATH\\Views\\admin\\courses\\edit.php', 8)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\courses\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/courses/edit', [], true)
+ 5 APPPATH\Controllers\CourseController.php(55): view('admin/courses/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\CourseController->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CourseController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2025-01-07 21:30:14 --> Unknown column 'updated_at' in 'field list'
+CRITICAL - 2025-01-07 21:30:14 --> Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `courses` SET `name` = \'Paket Manual\', `description` = \'5 x pertemuan (10 jam)\', `price` = 700000, `updated_at` = \'2025-01-07 21:30:14\'
+WHERE `courses`.`id` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `courses` SET `name` = \'Paket Manual\', `description` = \'5 x pertemuan (10 jam)\', `price` = 700000, `updated_at` = \'2025-01-07 21:30:14\'
+WHERE `courses`.`id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `courses` SET `name` = \'Paket Manual\', `description` = \'5 x pertemuan (10 jam)\', `price` = 700000, `updated_at` = \'2025-01-07 21:30:14\'
+WHERE `courses`.`id` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2046): CodeIgniter\Database\BaseConnection->query('UPDATE `courses` SET `name` = :name:, `description` = :description:, `price` = :price:, `updated_at` = :updated_at:
+WHERE `courses`.`id` IN :courses.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(337): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(865): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\CourseController.php(64): CodeIgniter\Model->update('1', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\CourseController->update('1')
+10 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CourseController))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2025-01-07 23:03:39 --> Undefined array key "title"
+in APPPATH\Views\admin\schedules\create.php on line 9.
+ 1 APPPATH\Views\admin\schedules\create.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "title"', 'APPPATH\\Views\\admin\\schedules\\create.php', 9)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\schedules\\create.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/schedules/create', [], true)
+ 5 APPPATH\Controllers\ScheduleController.php(33): view('admin/schedules/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\ScheduleController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ScheduleController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2025-01-07 23:08:00 --> Undefined array key "title"
+in APPPATH\Views\admin\schedules\edit.php on line 10.
+ 1 APPPATH\Views\admin\schedules\edit.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "title"', 'APPPATH\\Views\\admin\\schedules\\edit.php', 10)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\schedules\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/schedules/edit', [], true)
+ 5 APPPATH\Controllers\ScheduleController.php(53): view('admin/schedules/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\ScheduleController->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ScheduleController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2025-01-07 23:11:37 --> Unknown column 'courses.title' in 'field list'
+CRITICAL - 2025-01-07 23:11:37 --> Unknown column 'courses.title' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `schedules`.*, `courses`.`title` as `course_title`, `instructors`.`name` as `instructor_name`
+FROM `schedules`
+JOIN `courses` ON `courses`.`id` = `schedules`.`course_id`
+JOIN `instructors` ON `instructors`.`id` = `schedules`.`instructor_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `schedules`.*, `courses`.`title` as `course_title`, `instructors`.`name` as `instructor_name`
+FROM `schedules`
+JOIN `courses` ON `courses`.`id` = `schedules`.`course_id`
+JOIN `instructors` ON `instructors`.`id` = `schedules`.`instructor_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `schedules`.*, `courses`.`title` as `course_title`, `instructors`.`name` as `instructor_name`
+FROM `schedules`
+JOIN `courses` ON `courses`.`id` = `schedules`.`course_id`
+JOIN `instructors` ON `instructors`.`id` = `schedules`.`instructor_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `schedules`.*, `courses`.`title` as `course_title`, `instructors`.`name` as `instructor_name`
+FROM `schedules`
+JOIN `courses` ON `courses`.`id` = `schedules`.`course_id`
+JOIN `instructors` ON `instructors`.`id` = `schedules`.`instructor_id`', [], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\ScheduleController.php(31): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\ScheduleController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ScheduleController))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2025-01-07 23:17:53 --> Unknown column 'schedules.course_name' in 'on clause'
+CRITICAL - 2025-01-07 23:17:53 --> Unknown column 'schedules.course_name' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `schedules`.*, `courses`.`name` as `course_name`, `instructors`.`name` as `instructor_name`
+FROM `schedules`
+JOIN `courses` ON `courses`.`name` = `schedules`.`course_name`
+JOIN `instructors` ON `instructors`.`name` = `schedules`.`instructor_name`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `schedules`.*, `courses`.`name` as `course_name`, `instructors`.`name` as `instructor_name`
+FROM `schedules`
+JOIN `courses` ON `courses`.`name` = `schedules`.`course_name`
+JOIN `instructors` ON `instructors`.`name` = `schedules`.`instructor_name`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `schedules`.*, `courses`.`name` as `course_name`, `instructors`.`name` as `instructor_name`
+FROM `schedules`
+JOIN `courses` ON `courses`.`name` = `schedules`.`course_name`
+JOIN `instructors` ON `instructors`.`name` = `schedules`.`instructor_name`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `schedules`.*, `courses`.`name` as `course_name`, `instructors`.`name` as `instructor_name`
+FROM `schedules`
+JOIN `courses` ON `courses`.`name` = `schedules`.`course_name`
+JOIN `instructors` ON `instructors`.`name` = `schedules`.`instructor_name`', [], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\ScheduleController.php(31): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\ScheduleController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ScheduleController))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2025-01-07 23:19:20 --> Cannot add or update a child row: a foreign key constraint fails (`kursus_mengemudi`.`schedules`, CONSTRAINT `schedules_ibfk_1` FOREIGN KEY (`course_id`) REFERENCES `courses` (`id`))
+CRITICAL - 2025-01-07 23:19:20 --> Cannot add or update a child row: a foreign key constraint fails (`kursus_mengemudi`.`schedules`, CONSTRAINT `schedules_ibfk_1` FOREIGN KEY (`course_id`) REFERENCES `courses` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `schedules` SET `course_id` = \'Paket Manual\', `instructor_id` = \'maulana\', `schedule_date` = \'2025-01-08\', `schedule_time` = \'12:07:00\'
+WHERE `schedules`.`id` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `schedules` SET `course_id` = \'Paket Manual\', `instructor_id` = \'maulana\', `schedule_date` = \'2025-01-08\', `schedule_time` = \'12:07:00\'
+WHERE `schedules`.`id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `schedules` SET `course_id` = \'Paket Manual\', `instructor_id` = \'maulana\', `schedule_date` = \'2025-01-08\', `schedule_time` = \'12:07:00\'
+WHERE `schedules`.`id` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2046): CodeIgniter\Database\BaseConnection->query('UPDATE `schedules` SET `course_id` = :course_id:, `instructor_id` = :instructor_id:, `schedule_date` = :schedule_date:, `schedule_time` = :schedule_time:
+WHERE `schedules`.`id` IN :schedules.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(337): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(865): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\ScheduleController.php(66): CodeIgniter\Model->update('1', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\ScheduleController->update('1')
+10 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ScheduleController))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2025-01-07 23:20:48 --> Cannot add or update a child row: a foreign key constraint fails (`kursus_mengemudi`.`schedules`, CONSTRAINT `schedules_ibfk_1` FOREIGN KEY (`course_id`) REFERENCES `courses` (`id`))
+CRITICAL - 2025-01-07 23:20:48 --> Cannot add or update a child row: a foreign key constraint fails (`kursus_mengemudi`.`schedules`, CONSTRAINT `schedules_ibfk_1` FOREIGN KEY (`course_id`) REFERENCES `courses` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `schedules` SET `course_id` = \'Paket Manual\', `instructor_id` = \'maulana\', `schedule_date` = \'2025-01-08\', `schedule_time` = \'12:07:00\'
+WHERE `schedules`.`id` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `schedules` SET `course_id` = \'Paket Manual\', `instructor_id` = \'maulana\', `schedule_date` = \'2025-01-08\', `schedule_time` = \'12:07:00\'
+WHERE `schedules`.`id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `schedules` SET `course_id` = \'Paket Manual\', `instructor_id` = \'maulana\', `schedule_date` = \'2025-01-08\', `schedule_time` = \'12:07:00\'
+WHERE `schedules`.`id` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2046): CodeIgniter\Database\BaseConnection->query('UPDATE `schedules` SET `course_id` = :course_id:, `instructor_id` = :instructor_id:, `schedule_date` = :schedule_date:, `schedule_time` = :schedule_time:
+WHERE `schedules`.`id` IN :schedules.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(337): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(865): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\ScheduleController.php(66): CodeIgniter\Model->update('1', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\ScheduleController->update('1')
+10 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ScheduleController))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2025-01-07 23:21:01 --> Cannot add or update a child row: a foreign key constraint fails (`kursus_mengemudi`.`schedules`, CONSTRAINT `schedules_ibfk_1` FOREIGN KEY (`course_id`) REFERENCES `courses` (`id`))
+CRITICAL - 2025-01-07 23:21:01 --> Cannot add or update a child row: a foreign key constraint fails (`kursus_mengemudi`.`schedules`, CONSTRAINT `schedules_ibfk_1` FOREIGN KEY (`course_id`) REFERENCES `courses` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `schedules` SET `course_id` = \'Paket Manual\', `instructor_id` = \'maulana\', `schedule_date` = \'2025-01-08\', `schedule_time` = \'12:07:00\'
+WHERE `schedules`.`id` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `schedules` SET `course_id` = \'Paket Manual\', `instructor_id` = \'maulana\', `schedule_date` = \'2025-01-08\', `schedule_time` = \'12:07:00\'
+WHERE `schedules`.`id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `schedules` SET `course_id` = \'Paket Manual\', `instructor_id` = \'maulana\', `schedule_date` = \'2025-01-08\', `schedule_time` = \'12:07:00\'
+WHERE `schedules`.`id` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2046): CodeIgniter\Database\BaseConnection->query('UPDATE `schedules` SET `course_id` = :course_id:, `instructor_id` = :instructor_id:, `schedule_date` = :schedule_date:, `schedule_time` = :schedule_time:
+WHERE `schedules`.`id` IN :schedules.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(337): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(865): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\ScheduleController.php(66): CodeIgniter\Model->update('1', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\ScheduleController->update('1')
+10 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ScheduleController))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2025-01-07 23:21:29 --> Cannot add or update a child row: a foreign key constraint fails (`kursus_mengemudi`.`schedules`, CONSTRAINT `schedules_ibfk_1` FOREIGN KEY (`course_id`) REFERENCES `courses` (`id`))
+CRITICAL - 2025-01-07 23:21:29 --> Cannot add or update a child row: a foreign key constraint fails (`kursus_mengemudi`.`schedules`, CONSTRAINT `schedules_ibfk_1` FOREIGN KEY (`course_id`) REFERENCES `courses` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `schedules` SET `course_id` = \'Paket Manual\', `instructor_id` = \'maulana\', `schedule_date` = \'2025-01-08\', `schedule_time` = \'12:07:00\'
+WHERE `schedules`.`id` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `schedules` SET `course_id` = \'Paket Manual\', `instructor_id` = \'maulana\', `schedule_date` = \'2025-01-08\', `schedule_time` = \'12:07:00\'
+WHERE `schedules`.`id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `schedules` SET `course_id` = \'Paket Manual\', `instructor_id` = \'maulana\', `schedule_date` = \'2025-01-08\', `schedule_time` = \'12:07:00\'
+WHERE `schedules`.`id` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2046): CodeIgniter\Database\BaseConnection->query('UPDATE `schedules` SET `course_id` = :course_id:, `instructor_id` = :instructor_id:, `schedule_date` = :schedule_date:, `schedule_time` = :schedule_time:
+WHERE `schedules`.`id` IN :schedules.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(337): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(865): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\ScheduleController.php(66): CodeIgniter\Model->update('1', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\ScheduleController->update('1')
+10 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ScheduleController))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2025-01-07 23:24:53 --> Unknown column 'courses.title' in 'field list'
+CRITICAL - 2025-01-07 23:24:53 --> Unknown column 'courses.title' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `schedules`.`id`, `courses`.`title` as `course_name`, `instructors`.`name` as `instructor_name`, `schedules`.`schedule_date`, `schedules`.`schedule_time`
+FROM `schedules`
+JOIN `courses` ON `courses`.`id` = `schedules`.`course_id`
+JOIN `instructors` ON `instructors`.`id` = `schedules`.`instructor_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `schedules`.`id`, `courses`.`title` as `course_name`, `instructors`.`name` as `instructor_name`, `schedules`.`schedule_date`, `schedules`.`schedule_time`
+FROM `schedules`
+JOIN `courses` ON `courses`.`id` = `schedules`.`course_id`
+JOIN `instructors` ON `instructors`.`id` = `schedules`.`instructor_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `schedules`.`id`, `courses`.`title` as `course_name`, `instructors`.`name` as `instructor_name`, `schedules`.`schedule_date`, `schedules`.`schedule_time`
+FROM `schedules`
+JOIN `courses` ON `courses`.`id` = `schedules`.`course_id`
+JOIN `instructors` ON `instructors`.`id` = `schedules`.`instructor_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `schedules`.`id`, `courses`.`title` as `course_name`, `instructors`.`name` as `instructor_name`, `schedules`.`schedule_date`, `schedules`.`schedule_time`
+FROM `schedules`
+JOIN `courses` ON `courses`.`id` = `schedules`.`course_id`
+JOIN `instructors` ON `instructors`.`id` = `schedules`.`instructor_id`', [], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\ScheduleModel.php(22): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\ScheduleController.php(28): App\Models\ScheduleModel->getSchedulesWithCourseAndInstructor()
+ 9 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\ScheduleController->index()
+10 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ScheduleController))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2025-01-07 23:24:58 --> Unknown column 'courses.title' in 'field list'
+CRITICAL - 2025-01-07 23:24:58 --> Unknown column 'courses.title' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `schedules`.`id`, `courses`.`title` as `course_name`, `instructors`.`name` as `instructor_name`, `schedules`.`schedule_date`, `schedules`.`schedule_time`
+FROM `schedules`
+JOIN `courses` ON `courses`.`id` = `schedules`.`course_id`
+JOIN `instructors` ON `instructors`.`id` = `schedules`.`instructor_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `schedules`.`id`, `courses`.`title` as `course_name`, `instructors`.`name` as `instructor_name`, `schedules`.`schedule_date`, `schedules`.`schedule_time`
+FROM `schedules`
+JOIN `courses` ON `courses`.`id` = `schedules`.`course_id`
+JOIN `instructors` ON `instructors`.`id` = `schedules`.`instructor_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `schedules`.`id`, `courses`.`title` as `course_name`, `instructors`.`name` as `instructor_name`, `schedules`.`schedule_date`, `schedules`.`schedule_time`
+FROM `schedules`
+JOIN `courses` ON `courses`.`id` = `schedules`.`course_id`
+JOIN `instructors` ON `instructors`.`id` = `schedules`.`instructor_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `schedules`.`id`, `courses`.`title` as `course_name`, `instructors`.`name` as `instructor_name`, `schedules`.`schedule_date`, `schedules`.`schedule_time`
+FROM `schedules`
+JOIN `courses` ON `courses`.`id` = `schedules`.`course_id`
+JOIN `instructors` ON `instructors`.`id` = `schedules`.`instructor_id`', [], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\ScheduleModel.php(22): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\ScheduleController.php(28): App\Models\ScheduleModel->getSchedulesWithCourseAndInstructor()
+ 9 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\ScheduleController->index()
+10 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ScheduleController))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

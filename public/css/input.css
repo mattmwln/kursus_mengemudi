@@ -1,0 +1,172 @@
+/* public/css/input.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 🌟 CCU: Button Styles */
+.btn-primary {
+    @apply bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded-lg shadow-md;
+}
+
+.btn-secondary {
+    @apply bg-gray-500 hover:bg-gray-700 text-white py-2 px-4 rounded-lg shadow-md;
+}
+
+.btn-danger {
+    @apply bg-red-500 hover:bg-red-700 text-white py-2 px-4 rounded-lg shadow-md;
+}
+
+/* 🌟 CCU: Form Styles */
+.form-input {
+    @apply w-full px-4 py-2 border rounded-lg border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500;
+}
+
+.form-label {
+    @apply block text-sm font-medium text-gray-700;
+}
+
+/* 🌟 CCU: Table Styles */
+.table-container {
+    @apply overflow-x-auto bg-white rounded-lg shadow-md;
+}
+
+.table-header {
+    @apply bg-gray-200 text-gray-700 uppercase text-sm font-semibold;
+}
+
+.table-row {
+    @apply border-b border-gray-200;
+}
+
+/* 🌟 CCU: Sidebar Styles */
+.sidebar {
+    @apply bg-gray-800 text-white w-64 h-screen p-6 space-y-6;
+}
+
+.sidebar-header {
+    @apply text-2xl font-semibold text-yellow-400 mb-4;
+}
+
+.sidebar-link {
+    @apply block text-white hover:text-yellow-400 py-2 px-4 rounded-md transition duration-200;
+}
+
+.sidebar-link.active {
+    @apply bg-yellow-400 text-black;
+}
+
+/* 🌟 CCU: Navbar Styles */
+.navbar {
+    @apply bg-primary text-white flex items-center justify-between px-6 py-3 shadow-md;
+}
+
+.navbar-left {
+    @apply flex items-center space-x-6;
+}
+
+.navbar-center {
+    @apply flex-1 text-center;
+}
+
+.navbar-right {
+    @apply flex items-center space-x-6;
+}
+
+.navbar-brand {
+    @apply font-semibold text-xl text-yellow-300;
+}
+
+.navbar-link {
+    @apply text-white hover:text-gray-300 transition duration-200;
+}
+
+.navbar-logout {
+    @apply bg-red-500 hover:bg-red-700 text-white py-2 px-4 rounded-md flex items-center space-x-1 transition duration-200;
+}
+
+/* 🌟 CCU: Footer Styles */
+.footer {
+    @apply bg-gray-800 text-white text-center py-4 mt-6;
+}
+
+.footer-text {
+    @apply text-sm;
+}
+
+.footer-link {
+    @apply text-yellow-400 hover:text-yellow-500 transition duration-200;
+}
+
+/* 🌟 CCU: Card Styles */
+.card {
+    @apply bg-white shadow-md rounded-lg p-6;
+}
+
+.card-title {
+    @apply text-xl font-semibold text-gray-800 mb-4;
+}
+
+.card-body {
+    @apply text-gray-700;
+}
+
+/* 🌟 CCU: Modal Styles */
+.modal-overlay {
+    @apply fixed inset-0 bg-gray-500 bg-opacity-50 flex justify-center items-center;
+}
+
+.modal {
+    @apply bg-white rounded-lg shadow-xl w-full max-w-md p-6;
+}
+
+.modal-header {
+    @apply text-2xl font-semibold text-gray-800 mb-4;
+}
+
+.modal-body {
+    @apply text-gray-700;
+}
+
+.modal-footer {
+    @apply flex justify-end space-x-4;
+}
+
+.modal-button {
+    @apply py-2 px-4 rounded-md text-white focus:outline-none;
+}
+
+/* 🌟 CCU: Tooltip Styles */
+.tooltip {
+    @apply relative inline-block text-gray-700;
+}
+
+.tooltip-text {
+    @apply absolute text-sm text-white bg-gray-800 p-2 rounded-md hidden group-hover:block;
+}
+
+/* 🌟 CCU: Responsive Styles */
+@media (max-width: 768px) {
+    .sidebar {
+        @apply fixed inset-0 w-full bg-gray-800 p-4 z-50;
+    }
+
+    .sidebar-link {
+        @apply py-2 text-sm;
+    }
+
+    .navbar {
+        @apply flex flex-col items-center;
+    }
+
+    .navbar-left,
+    .navbar-center,
+    .navbar-right {
+        @apply flex justify-center;
+    }
+
+    .navbar-brand {
+        @apply text-lg;
+    }
+}
+
