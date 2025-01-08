@@ -131,3 +131,31 @@ FROM `instructors`', [], false)
 10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
 11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
 12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2025-01-08 02:00:44 --> Table 'kursus_mengemudi.schedules' doesn't exist
+CRITICAL - 2025-01-08 02:00:44 --> Table 'kursus_mengemudi.schedules' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `schedules`.`id`, `courses`.`name` as `course_name`, `instructors`.`name` as `instructor_name`, `schedules`.`schedule_date`, `schedules`.`schedule_time`
+FROM `schedules`
+JOIN `courses` ON `courses`.`id` = `schedules`.`course_id`
+JOIN `instructors` ON `instructors`.`id` = `schedules`.`instructor_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `schedules`.`id`, `courses`.`name` as `course_name`, `instructors`.`name` as `instructor_name`, `schedules`.`schedule_date`, `schedules`.`schedule_time`
+FROM `schedules`
+JOIN `courses` ON `courses`.`id` = `schedules`.`course_id`
+JOIN `instructors` ON `instructors`.`id` = `schedules`.`instructor_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `schedules`.`id`, `courses`.`name` as `course_name`, `instructors`.`name` as `instructor_name`, `schedules`.`schedule_date`, `schedules`.`schedule_time`
+FROM `schedules`
+JOIN `courses` ON `courses`.`id` = `schedules`.`course_id`
+JOIN `instructors` ON `instructors`.`id` = `schedules`.`instructor_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `schedules`.`id`, `courses`.`name` as `course_name`, `instructors`.`name` as `instructor_name`, `schedules`.`schedule_date`, `schedules`.`schedule_time`
+FROM `schedules`
+JOIN `courses` ON `courses`.`id` = `schedules`.`course_id`
+JOIN `instructors` ON `instructors`.`id` = `schedules`.`instructor_id`', [], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\ScheduleModel.php(22): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\ScheduleController.php(28): App\Models\ScheduleModel->getSchedulesWithCourseAndInstructor()
+ 9 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\ScheduleController->index()
+10 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ScheduleController))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
