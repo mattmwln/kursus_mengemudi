@@ -31,9 +31,16 @@
                         <td class="px-4 py-2 text-sm"><?= esc($schedule['getInstructor']->name); ?></td>
                         <td class="px-4 py-2 text-sm"><?= $schedule['schedule_date']; ?></td>
                         <td class="px-4 py-2 text-sm"><?= $schedule['schedule_time']; ?></td>
-                        <td class="px-4 py-2">
-                            <a href="<?= base_url('admin/schedules/edit/' . $schedule['id']); ?>" class="btn-secondary btn-sm">Edit</a>
-                            <a href="<?= base_url('admin/schedules/delete/' . $schedule['id']); ?>" class="btn-danger btn-sm ml-2" onclick="return confirm('Yakin ingin menghapus jadwal ini?')">Hapus</a>
+                        <td class="px-4 py-2 flex gap-2">
+                            <a href="<?= base_url('admin/schedule/edit/' . $schedule['id']); ?>" 
+                               class="btn-primary btn-sm">
+                                <i class="bi bi-pencil mr-1"></i>
+                            </a>
+                            <a href="<?= base_url('admin/schedule/delete/' . $schedule['id']); ?>" 
+                               class="btn-danger btn-sm"
+                               onclick="return confirm('Yakin ingin menghapus instruktur ini?')">
+                                <i class="bi bi-trash mr-1"></i>
+                            </a>
                         </td>
                     </tr>
                 <?php endforeach; ?>

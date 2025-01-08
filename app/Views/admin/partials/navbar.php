@@ -20,6 +20,10 @@
             Home
         </a>
         <!-- Schedules Link -->
+        <a href="<?= base_url('/admin/register'); ?>" class="hidden sm:inline-block text-white hover:text-gray-300 transition duration-200">
+            Pendaftaran
+        </a>
+        <!-- Schedules Link -->
         <a href="<?= base_url('/admin/schedules'); ?>" class="hidden sm:inline-block text-white hover:text-gray-300 transition duration-200">
             Schedules
         </a>
