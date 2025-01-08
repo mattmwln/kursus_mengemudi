@@ -18,9 +18,9 @@ $routes->set404Override();
 $routes->get('/', 'Home::index');
 
 // 🔑 Rute Login & Logout
-$routes->get('/auth/login', 'AuthController::login');
-$routes->post('/auth/login', 'AuthController::loginProcess');
-$routes->get('/auth/logout', 'AuthController::logout');
+$routes->get('/auth/login', 'Auth\AuthController::login');
+$routes->post('/auth/login', 'Auth\AuthController::loginProcess');
+$routes->get('/auth/logout', 'Auth\AuthController::logout');
 
 // 🛡️ Rute Admin (Dengan Filter Auth)
 $routes->group('admin', ['filter' => 'auth'], function($routes) {
