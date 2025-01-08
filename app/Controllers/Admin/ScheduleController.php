@@ -81,4 +81,22 @@ class ScheduleController extends Controller
         $this->scheduleModel->delete($id);
         return redirect()->to('/admin/schedules');
     }
+
+    public function bulkDelete()
+    {
+        // Mengambil array ID jadwal yang dipilih
+        $selectedSchedules = $this->request->getPost('selected_schedules');
+
+        if ($selectedSchedules && is_array($selectedSchedules)) {
+            foreach ($selectedSchedules as $scheduleId) {
+                $this->scheduleModel->delete($scheduleId);
+            }
+
+            return redirect()->to('/admin/schedules')->with('success', 'Jadwal yang dipilih berhasil dihapus.');
+        }
+
+        return redirect()->to('/admin/schedules')->with('error', 'Tidak ada jadwal yang dipilih untuk dihapus.');
+    }
+
 }
+

@@ -58,4 +58,21 @@ class InstructorController extends Controller
         $this->instructorModel->delete($id);
         return redirect()->to('/admin/instructors');
     }
+
+    public function bulkDelete()
+{
+    // Mengambil array ID instruktur yang dipilih
+    $selectedInstructors = $this->request->getPost('selected_instructors');
+
+    if ($selectedInstructors && is_array($selectedInstructors)) {
+        foreach ($selectedInstructors as $instructorId) {
+            $this->instructorModel->delete($instructorId);
+        }
+
+        return redirect()->to('/admin/instructors')->with('success', 'Instruktur yang dipilih berhasil dihapus.');
+    }
+
+    return redirect()->to('/admin/instructors')->with('error', 'Tidak ada instruktur yang dipilih untuk dihapus.');
+}
+
 }

@@ -79,4 +79,20 @@ class CourseController extends Controller
         // Setelah kursus dihapus, mengarahkan kembali ke daftar kursus
         return redirect()->to('/admin/courses');
     }
+
+    public function bulkDelete()
+    {
+        // Mengambil array ID kursus yang dipilih
+        $selectedCourses = $this->request->getPost('selected_courses');
+
+        if ($selectedCourses && is_array($selectedCourses)) {
+            foreach ($selectedCourses as $courseId) {
+                $this->courseModel->delete($courseId);
+            }
+
+            return redirect()->to('/admin/courses')->with('success', 'Kursus yang dipilih berhasil dihapus.');
+        }
+
+        return redirect()->to('/admin/courses')->with('error', 'Tidak ada kursus yang dipilih untuk dihapus.');
+    }
 }

@@ -35,6 +35,9 @@ $routes->group('admin', ['filter' => 'auth'], function($routes) {
     $routes->get('courses/edit/(:num)', 'Admin\CourseController::edit/$1'); 
     $routes->post('courses/update/(:num)', 'Admin\CourseController::update/$1'); 
     $routes->get('courses/delete/(:num)', 'Admin\CourseController::delete/$1'); 
+    $routes->post('courses/bulk-delete', 'Admin\CourseController::bulkDelete');
+
+
 
 
     $routes->get('instructors', 'Admin\InstructorController::index');
@@ -43,6 +46,8 @@ $routes->group('admin', ['filter' => 'auth'], function($routes) {
     $routes->get('instructors/edit/(:num)', 'Admin\InstructorController::edit/$1');
     $routes->post('instructors/update/(:num)', 'Admin\InstructorController::update/$1');
     $routes->get('instructors/delete/(:num)', 'Admin\InstructorController::delete/$1');
+    $routes->post('instructors/bulk-delete', 'Admin\InstructorController::bulkDelete');
+
 
 
     $routes->get('schedules', 'Admin\ScheduleController::index');
@@ -51,6 +56,8 @@ $routes->group('admin', ['filter' => 'auth'], function($routes) {
     $routes->get('schedules/edit/(:num)', 'Admin\ScheduleController::edit/$1');
     $routes->post('schedules/update/(:num)', 'Admin\ScheduleController::update/$1');
     $routes->get('schedules/delete/(:num)', 'Admin\ScheduleController::delete/$1');
+    $routes->post('schedules/bulk-delete', 'Admin\ScheduleController::bulkDelete');
+
 
     $routes->get('register', 'Admin\RegisterController::index');
     // $routes->get('register/create', 'Admin\ScheduleController::create');
