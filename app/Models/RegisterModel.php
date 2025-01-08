@@ -46,4 +46,13 @@ class RegisterModel extends Model
     protected $afterFind      = [];
     protected $beforeDelete   = [];
     protected $afterDelete    = [];
+
+    public function getSchedule($scheduleId)
+    {
+        return $this->db->table('schedules')
+                        ->select('schedule_date')
+                        ->where('id', $scheduleId)
+                        ->get()
+                        ->getRow();
+    }
 }

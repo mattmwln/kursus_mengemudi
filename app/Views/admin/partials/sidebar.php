@@ -27,7 +27,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="<?= base_url('/admin/users'); ?>" class="flex items-center space-x-2 p-2 rounded-md text-gray-200 hover:bg-blue-700 hover:text-white">
+                    <a href="<?= base_url('/admin/register'); ?>" class="flex items-center space-x-2 p-2 rounded-md text-gray-200 hover:bg-blue-700 hover:text-white">
                         <i class="fas fa-users"></i>
                         <span>Pendaftaran</span>
                     </a>

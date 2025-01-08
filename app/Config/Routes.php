@@ -51,4 +51,12 @@ $routes->group('admin', ['filter' => 'auth'], function($routes) {
     $routes->get('schedules/edit/(:num)', 'Admin\ScheduleController::edit/$1');
     $routes->post('schedules/update/(:num)', 'Admin\ScheduleController::update/$1');
     $routes->get('schedules/delete/(:num)', 'Admin\ScheduleController::delete/$1');
+
+    $routes->get('register', 'Admin\RegisterController::index');
+    // $routes->get('register/create', 'Admin\ScheduleController::create');
+    // $routes->post('register/store', 'Admin\ScheduleController::store');
+    // $routes->get('register/edit/(:num)', 'Admin\ScheduleController::edit/$1');
+    // $routes->post('register/update/(:num)', 'Admin\ScheduleController::update/$1');
+    // $routes->get('register/delete/(:num)', 'Admin\ScheduleController::delete/$1');
 });
+
