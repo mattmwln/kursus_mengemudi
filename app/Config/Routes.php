@@ -17,6 +17,12 @@ $routes->set404Override();
 // 🏠 Rute Halaman Utama
 $routes->get('/', 'Home::index');
 
+// Checkout
+$routes->post('checkout', 'User\CheckoutController::checkout');
+$routes->get('checkout-page/(:num)', 'User\CheckoutController::viewCheckout/$1');
+$routes->post('checkout-page/(:num)', 'User\CheckoutController::uploadPayment/$1');
+
+
 // 🔑 Rute Login & Logout
 $routes->get('/auth/login', 'Auth\AuthController::login');
 $routes->post('/auth/login', 'Auth\AuthController::loginProcess');
