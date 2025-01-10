@@ -8,15 +8,15 @@
             <div class="col-lg-8 ftco-animate">
                 <<div class="text w-100 text-center mb-md-5 pb-md-5">
                     <h1 class="mb-4">Mudah &amp; Cepat Belajar Mengemudi</h1>
-                    <p style="font-size: 18px;">Kami membantu Anda menjadi pengemudi yang handal dengan langkah-langkah praktis dan aman. Bersama kami, belajar mengemudi jadi lebih menyenangkan dan penuh percaya diri!</p>
-                    <a  class="icon-wrap popup-vimeo d-flex align-items-center mt-4 justify-content-center">
-                        <div class="icon d-flex align-items-center justify-content-center">
-                            <span class="ion-ios-play" id="register"></span>
-                        </div>
-                        <div class="heading-title ml-5">
-                            <span>Langkah mudah untuk belajar mengemudi</span>
-                        </div>
-                    </a>
+                    <p style="font-size: 18px;">ANDA INGIN BISA MENGEMUDI? Angel's Driving School memiliki tim yang profesional dan berpengalaman di bidangnya sehingga tidak diragukan lagi.Rasakan Nikmatnya Berkendara Bersama Kami</p>
+                    <a href="https://www.youtube.com/watch?v=gWl8waj0mzM" class="icon-wrap popup-vimeo d-flex align-items-center mt-4 justify-content-center" target="_blank">
+    <div class="icon d-flex align-items-center justify-content-center">
+        <span class="ion-ios-play" id="register"></span>
+    </div>
+    <div class="heading-title ml-5">
+        <span>Langkah mudah untuk belajar mengemudi</span>
+    </div>
+</a>
                 </div>
             </div>
             </div>
@@ -79,7 +79,7 @@
                                         <div class="services w-100 text-center">
                                             <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-route"></span></div>
                                             <div class="text w-100">
-                                                <h3 class="heading mb-2">Pilih Lokasi Belajar Anda</h3>
+                                                <h3 class="heading mb-2">Pilih Instruktur Belajar Anda</h3>
                                             </div>
                                         </div>      
                                     </div>
@@ -107,6 +107,31 @@
 				</div>
   		</div>
     </section>
+
+    <section class="ftco-section ftco-about" id="about">
+    <div class="container">
+        <div class="row no-gutters">
+            <div class="col-md-6 p-md-5 img img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/about.jpg);">
+            </div>
+            <div class="col-md-6 wrap-about ftco-animate">
+                <div class="heading-section heading-section-white pl-md-5">
+                    <span class="subheading">Tentang Kami</span>
+                    <h2 class="mb-4">Selamat Datang di Angel's Driving School</h2>
+
+                    <p>Angel's Driving School kursus mengemudi di Palembang adalah satu-satunya kursus mengemudi terbaik dipalembang. Kami memberikan layanan terbaik sebagai jaminan kepuasan Anda. Metode kami bisa mengajari anda cara mengemudi dalam waktu singkat, iya dalam waktu singkat kami pastikan anda mengemudi mobil sendiri ke tempat aktivitas anda, ke kantor, ke kampus, atau kemana saja, dan itu akan mengejutkan teman-teman anda. Metode kami sudah terbukti membantu ribuan orang dan ratusan perusahaan. Dan kami juga siap membantu anda sekarang.</p>
+                    <ul class="list-unstyled">
+    <li><i class="bi bi-check-circle text-white"></i> <strong class="text-white">Keselamatan NO.1</strong></li>
+    <li><i class="bi bi-check-circle text-white"></i> <strong class="text-white">Waktu belajar yang fleksibel</strong></li>
+    <li><i class="bi bi-check-circle text-white"></i> <strong class="text-white">Instruktur ramah dan terpercaya</strong></li>
+    <li><i class="bi bi-check-circle text-white"></i> <strong class="text-white">Harga terjangkau</strong></li>
+</ul>
+                    <p><a href="#register " class="btn btn-primary py-3 px-4">Daftar Sekarang</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 
     <section class="ftco-section ftco-no-pt bg-light" id="services">
     	<div class="container">
@@ -141,25 +166,48 @@
     	</div>
     </section>
 
-    <section class="ftco-section ftco-about">
-        <div class="container">
-            <div class="row no-gutters">
-                <div class="col-md-6 p-md-5 img img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/about.jpg);">
-                </div>
-                <div class="col-md-6 wrap-about ftco-animate">
-                    <div class="heading-section heading-section-white pl-md-5">
-                        <span class="subheading">Tentang Kami</span>
-                        <h2 class="mb-4">Selamat Datang di Kursus Mengemudi GasCourse</h2>
-
-                        <p>Angel's Driving School kursus mengemudi di Palembang adalah satu-satunya kursus mengemudi terbaik dipalembang. Kami memberikan layanan terbaik sebagai jaminan kepuasan Anda. Metode kami bisa mengajari anda cara mengemudi dalam waktu singkat, iya dalam waktu singkat kami pastikan anda mengemudi mobil sendiri ke tempat aktivitas anda, ke kantor, ke kampus, atau kemana saja, dan itu akan mengejutkan teman-teman anda. Metode kami sudah terbukti membantu ribuan orang dan ratusan perusahaan. Dan kami juga siap membantu anda sekarang.</p>
-                        <p><a href="#" class="btn btn-primary py-3 px-4">Daftar Sekarang</a></p>
-                    </div>
-                </div>
+    <section class="ftco-counter ftco-section img bg-light" id="section-counter">
+			<div class="overlay"></div>
+    	<div class="container">
+    		<div class="row">
+          <div class="col-md-6 col-lg-3 justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text text-border d-flex align-items-center">
+                <strong class="number" data-number="800">0</strong>
+                <span>Siswa <br>Pertahun</span>
+              </div>
             </div>
+          </div>
+          <div class="col-md-6 col-lg-3 justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text text-border d-flex align-items-center">
+                <strong class="number" data-number="12">0</strong>
+                <span>Tahun <br>Pengalaman</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text text-border d-flex align-items-center">
+                <strong class="number" data-number="154">0</strong>
+                <span>Mendapatkan <br>Penghargaan</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text d-flex align-items-center">
+                <strong class="number" data-number="20">0</strong>
+                <span>Instruktur</span>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
+    	</div>
+    </section>	
 
-	<section class="ftco-section">
+
+	<section class="ftco-section" >>
 			<div class="container">
 				<div class="row justify-content-center mb-5">
           <div class="col-md-7 text-center heading-section ftco-animate">
@@ -213,19 +261,19 @@
 			<div class="container">
 				<div class="row justify-content-end">
 					<div class="col-md-6 heading-section heading-section-white ftco-animate">
-            <h2 class="mb-3">Do You Want To Earn With Us? So Don't Be Late.</h2>
-            <a href="#" class="btn btn-primary btn-lg">Become A Driver</a>
+            <h2 class="mb-3">Ingin Dapat Keuntungan Bersama Kami? Jadi, Jangan Terlambat.</h2>
+            <a href="#" class="btn btn-primary btn-lg">Menjadi Pengemudi</a>
           </div>
 				</div>
 			</div>
 	</section>
 
-    <section class="ftco-section testimony-section bg-light">
+    <section class="ftco-section testimony-section bg-light" id="testi">
       <div class="container">
         <div class="row justify-content-center mb-5">
           <div class="col-md-7 text-center heading-section ftco-animate">
           	<span class="subheading">Testimonial</span>
-            <h2 class="mb-3">Happy Clients</h2>
+            <h2 class="mb-3">Kata Mereka Tentang Kami</h2>
           </div>
         </div>
         <div class="row ftco-animate">
@@ -233,12 +281,12 @@
             <div class="carousel-testimony owl-carousel ftco-owl">
               <div class="item">
                 <div class="testimony-wrap rounded text-center py-4 pb-5">
-                  <div class="user-img mb-2" style="background-image: url(images/person_1.jpg)">
+                  <div class="user-img mb-2" style="background-image: url(images/person_3.jpg)">
                   </div>
                   <div class="text pt-4">
-                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <p class="name">Roger Scott</p>
-                    <span class="position">Marketing Manager</span>
+                    <p class="mb-4">Fasilitas bagus dan membuat nyaman, Instruktur rapi dan disiplin sehingga membuat proses belajar lebih cepat.</p>
+                    <p class="name">Eunwoo</p>
+                    <span class="position">Marketing</span>
                   </div>
                 </div>
               </div>
@@ -247,42 +295,32 @@
                   <div class="user-img mb-2" style="background-image: url(images/person_2.jpg)">
                   </div>
                   <div class="text pt-4">
-                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <p class="name">Roger Scott</p>
-                    <span class="position">Interface Designer</span>
+                    <p class="mb-4">Instruktur baik dan sabar sehingga mudah mengerti dan cepat belajar.</p>
+                    <p class="name">Lisa</p>
+                    <span class="position">Mahasiswa</span>
                   </div>
                 </div>
               </div>
               <div class="item">
                 <div class="testimony-wrap rounded text-center py-4 pb-5">
-                  <div class="user-img mb-2" style="background-image: url(images/person_3.jpg)">
+                  <div class="user-img mb-2" style="background-image: url(images/person_4.jpg)">
                   </div>
                   <div class="text pt-4">
-                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <p class="name">Roger Scott</p>
-                    <span class="position">UI Designer</span>
+                    <p class="mb-4">Instrukturny tampan dan mempesona sehingga membuat nyaman untuk belajar .</p>
+                    <p class="name">Kang Bitna</p>
+                    <span class="position">Mahasiswa</span>
                   </div>
                 </div>
               </div>
-              <div class="item">
-                <div class="testimony-wrap rounded text-center py-4 pb-5">
-                  <div class="user-img mb-2" style="background-image: url(images/person_1.jpg)">
-                  </div>
-                  <div class="text pt-4">
-                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <p class="name">Roger Scott</p>
-                    <span class="position">Web Developer</span>
-                  </div>
-                </div>
-              </div>
+            
               <div class="item">
                 <div class="testimony-wrap rounded text-center py-4 pb-5">
                   <div class="user-img mb-2" style="background-image: url(images/person_1.jpg)">
                   </div>
                   <div class="text pt-4">
-                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <p class="name">Roger Scott</p>
-                    <span class="position">System Analyst</span>
+                    <p class="mb-4">Harga murah tapi pelayanan dan fasilitas terbaekkkk!!.</p>
+                    <p class="name">Sunghoon</p>
+                    <span class="position">Karyawan Swasta</span>
                   </div>
                 </div>
               </div>
@@ -292,45 +330,8 @@
       </div>
     </section>
 
-    <section class="ftco-counter ftco-section img bg-light" id="section-counter">
-			<div class="overlay"></div>
-    	<div class="container">
-    		<div class="row">
-          <div class="col-md-6 col-lg-3 justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text text-border d-flex align-items-center">
-                <strong class="number" data-number="60">0</strong>
-                <span>Year <br>Experienced</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text text-border d-flex align-items-center">
-                <strong class="number" data-number="1090">0</strong>
-                <span>Total <br>Cars</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text text-border d-flex align-items-center">
-                <strong class="number" data-number="2590">0</strong>
-                <span>Happy <br>Customers</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text d-flex align-items-center">
-                <strong class="number" data-number="67">0</strong>
-                <span>Total <br>Branches</span>
-              </div>
-            </div>
-          </div>
-        </div>
-    	</div>
-    </section>	
+    
+    
 
 
 <?= $this->endSection();?>
