@@ -22,7 +22,7 @@ class Home extends BaseController
         }
 
         $courses = $courseModel->findAll();
-        $instructors = $instructorModel->findAll();
+        $instructors = $instructorModel->limit(4)->findAll();
 
         $data = [
             'schedules' => $schedules,
