@@ -8,7 +8,7 @@ class InstructorModel extends Model
 {
     protected $table = 'instructors';
     protected $primaryKey = 'id';
-    protected $allowedFields = ['name', 'email', 'phone', 'expertise'];
+    protected $allowedFields = ['name', 'email', 'phone', 'expertise', 'image'];
     protected $useTimestamps = true;
     protected $createdField  = 'created_at';
     protected $updatedField  = 'updated_at';

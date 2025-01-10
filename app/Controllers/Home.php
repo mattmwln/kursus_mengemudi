@@ -4,6 +4,7 @@ namespace App\Controllers;
 
 use App\Models\CourseModel;
 use App\Models\ScheduleModel;
+use App\Models\InstructorModel;
 
 class Home extends BaseController
 {
@@ -11,6 +12,7 @@ class Home extends BaseController
     {
         $scheduleModel = new ScheduleModel();
         $courseModel = new CourseModel();
+        $instructorModel = new InstructorModel();
         
         $schedules = $scheduleModel->findAll();
         // Tambahkan relasi manual ke setiap jadwal
@@ -20,10 +22,12 @@ class Home extends BaseController
         }
 
         $courses = $courseModel->findAll();
+        $instructors = $instructorModel->findAll();
 
         $data = [
             'schedules' => $schedules,
             'courses' => $courses,
+            'instructors' => $instructors,
         ];
 
         

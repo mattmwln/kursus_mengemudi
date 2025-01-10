@@ -10,13 +10,13 @@
                     <h1 class="mb-4">Mudah &amp; Cepat Belajar Mengemudi</h1>
                     <p style="font-size: 18px;">ANDA INGIN BISA MENGEMUDI? Angel's Driving School memiliki tim yang profesional dan berpengalaman di bidangnya sehingga tidak diragukan lagi.Rasakan Nikmatnya Berkendara Bersama Kami</p>
                     <a href="https://www.youtube.com/watch?v=gWl8waj0mzM" class="icon-wrap popup-vimeo d-flex align-items-center mt-4 justify-content-center" target="_blank">
-    <div class="icon d-flex align-items-center justify-content-center">
-        <span class="ion-ios-play" id="register"></span>
-    </div>
-    <div class="heading-title ml-5">
-        <span>Langkah mudah untuk belajar mengemudi</span>
-    </div>
-</a>
+                      <div class="icon d-flex align-items-center justify-content-center">
+                          <span class="ion-ios-play" id="register"></span>
+                      </div>
+                      <div class="heading-title ml-5">
+                          <span>Langkah mudah untuk belajar mengemudi</span>
+                      </div>
+                    </a>
                 </div>
             </div>
             </div>
@@ -109,28 +109,28 @@
     </section>
 
     <section class="ftco-section ftco-about" id="about">
-    <div class="container">
-        <div class="row no-gutters">
-            <div class="col-md-6 p-md-5 img img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/about.jpg);">
-            </div>
-            <div class="col-md-6 wrap-about ftco-animate">
-                <div class="heading-section heading-section-white pl-md-5">
-                    <span class="subheading">Tentang Kami</span>
-                    <h2 class="mb-4">Selamat Datang di Angel's Driving School</h2>
+      <div class="container">
+          <div class="row no-gutters">
+              <div class="col-md-6 p-md-5 img img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/about.jpg);">
+              </div>
+              <div class="col-md-6 wrap-about ftco-animate">
+                  <div class="heading-section heading-section-white pl-md-5">
+                      <span class="subheading">Tentang Kami</span>
+                      <h2 class="mb-4">Selamat Datang di Angel's Driving School</h2>
 
-                    <p>Angel's Driving School kursus mengemudi di Palembang adalah satu-satunya kursus mengemudi terbaik dipalembang. Kami memberikan layanan terbaik sebagai jaminan kepuasan Anda. Metode kami bisa mengajari anda cara mengemudi dalam waktu singkat, iya dalam waktu singkat kami pastikan anda mengemudi mobil sendiri ke tempat aktivitas anda, ke kantor, ke kampus, atau kemana saja, dan itu akan mengejutkan teman-teman anda. Metode kami sudah terbukti membantu ribuan orang dan ratusan perusahaan. Dan kami juga siap membantu anda sekarang.</p>
-                    <ul class="list-unstyled">
-    <li><i class="bi bi-check-circle text-white"></i> <strong class="text-white">Keselamatan NO.1</strong></li>
-    <li><i class="bi bi-check-circle text-white"></i> <strong class="text-white">Waktu belajar yang fleksibel</strong></li>
-    <li><i class="bi bi-check-circle text-white"></i> <strong class="text-white">Instruktur ramah dan terpercaya</strong></li>
-    <li><i class="bi bi-check-circle text-white"></i> <strong class="text-white">Harga terjangkau</strong></li>
-</ul>
-                    <p><a href="#register " class="btn btn-primary py-3 px-4">Daftar Sekarang</a></p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+                      <p>Angel's Driving School kursus mengemudi di Palembang adalah satu-satunya kursus mengemudi terbaik dipalembang. Kami memberikan layanan terbaik sebagai jaminan kepuasan Anda. Metode kami bisa mengajari anda cara mengemudi dalam waktu singkat, iya dalam waktu singkat kami pastikan anda mengemudi mobil sendiri ke tempat aktivitas anda, ke kantor, ke kampus, atau kemana saja, dan itu akan mengejutkan teman-teman anda. Metode kami sudah terbukti membantu ribuan orang dan ratusan perusahaan. Dan kami juga siap membantu anda sekarang.</p>
+                      <ul class="list-unstyled">
+                          <li><i class="bi bi-check-circle text-white"></i> <strong class="text-white">Keselamatan NO.1</strong></li>
+                          <li><i class="bi bi-check-circle text-white"></i> <strong class="text-white">Waktu belajar yang fleksibel</strong></li>
+                          <li><i class="bi bi-check-circle text-white"></i> <strong class="text-white">Instruktur ramah dan terpercaya</strong></li>
+                          <li><i class="bi bi-check-circle text-white"></i> <strong class="text-white">Harga terjangkau</strong></li>
+                      </ul>
+                      <p><a href="#register " class="btn btn-primary py-3 px-4">Daftar Sekarang</a></p>
+                  </div>
+              </div>
+              </div>
+          </div>
+    </section>
 
 
     <section class="ftco-section ftco-no-pt bg-light" id="services">
@@ -211,48 +211,25 @@
 			<div class="container">
 				<div class="row justify-content-center mb-5">
           <div class="col-md-7 text-center heading-section ftco-animate">
-          	<span class="subheading">Services</span>
-            <h2 class="mb-3">Our Latest Services</h2>
+          	<span class="subheading">Instruktur</span>
+            <h2 class="mb-3">Kami Memiliki Instruktur Berpengalaman</h2>
           </div>
         </div>
 				<div class="row">
-					<div class="col-md-3">
-						<div class="services services-2 w-100 text-center">
-            	<div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-wedding-car"></span></div>
-            	<div class="text w-100">
-                <h3 class="heading mb-2">Wedding Ceremony</h3>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-              </div>
-            </div>
-					</div>
-					<div class="col-md-3">
-						<div class="services services-2 w-100 text-center">
-            	<div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-transportation"></span></div>
-            	<div class="text w-100">
-                <h3 class="heading mb-2">City Transfer</h3>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-              </div>
-            </div>
-					</div>
-					<div class="col-md-3">
-						<div class="services services-2 w-100 text-center">
-            	<div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-car"></span></div>
-            	<div class="text w-100">
-                <h3 class="heading mb-2">Airport Transfer</h3>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-              </div>
-            </div>
-					</div>
-					<div class="col-md-3">
-						<div class="services services-2 w-100 text-center">
-            	<div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-transportation"></span></div>
-            	<div class="text w-100">
-                <h3 class="heading mb-2">Whole City Tour</h3>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-              </div>
-            </div>
-					</div>
-				</div>
+            <?php foreach($instructors as $instructor): ?>
+                <div class="col-md-3">
+                    <div class="services services-2 w-100 text-center">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <img src="<?= base_url($instructor['image']); ?>" alt="Instructor Image">
+                        </div>
+                        <div class="text w-100">
+                            <h3 class="heading mb-2"><?= $instructor['name'] ?></h3>
+                            <h6><?= $instructor['expertise']?></h6>
+                        </div>
+                    </div>
+                </div>
+            <?php endforeach; ?>
+        </div>
 			</div>
 	</section>
 

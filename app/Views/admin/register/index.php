@@ -38,25 +38,24 @@
                                 <a href="<?= base_url($register['payment_image']); ?>" target="_blank" class="btn btn-primary"><i class="bi bi-eye"></i></a>
                             </td>
                             <td class="px-6 py-3 border-b border-gray-200 text-sm">
-    <form action="<?= base_url('admin/register/update-status/' . $register['id']); ?>" method="POST">
-        <!-- CSRF Token -->
-        <?= csrf_field(); ?>
+                                <form action="<?= base_url('admin/register/update-status/' . $register['id']); ?>" method="POST">
+                                    <!-- CSRF Token -->
+                                    <?= csrf_field(); ?>
 
-        <!-- Dropdown untuk memilih status -->
-        <select name="status" class="form-select px-4 py-2 border rounded-md">
-            <option value=""><?= $register['status']?></option>
-            <option value="PENDING" <?= ($register['status'] == 'PENDING') ? 'selected' : ''; ?>>PENDING</option>
-            <option value="PROSES" <?= ($register['status'] == 'PROSES') ? 'selected' : ''; ?>>PROSES</option>
-            <option value="SELESAI" <?= ($register['status'] == 'SELESAI') ? 'selected' : ''; ?>>SELESAI</option>
-        </select>
+                                    <!-- Dropdown untuk memilih status -->
+                                    <select name="status" class="form-select px-4 py-2 border rounded-md">
+                                        <option value=""><?= $register['status']?></option>
+                                        <option value="PENDING" <?= ($register['status'] == 'PENDING') ? 'selected' : ''; ?>>PENDING</option>
+                                        <option value="PROSES" <?= ($register['status'] == 'PROSES') ? 'selected' : ''; ?>>PROSES</option>
+                                        <option value="SELESAI" <?= ($register['status'] == 'SELESAI') ? 'selected' : ''; ?>>SELESAI</option>
+                                    </select>
 
-        <!-- Tombol submit dengan warna Bootstrap yang beragam -->
-        <button type="submit" class="btn btn-primary mt-2">
-            Update Status
-        </button>
-    </form>
-</td>
-
+                                    <!-- Tombol submit dengan warna Bootstrap yang beragam -->
+                                    <button type="submit" class="btn btn-primary mt-2">
+                                        Update Status
+                                    </button>
+                                </form>
+                            </td>
                         </tr>
                     <?php endforeach; ?>
                 <?php else: ?>

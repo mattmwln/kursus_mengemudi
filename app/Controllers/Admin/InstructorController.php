@@ -27,14 +27,25 @@ class InstructorController extends Controller
 
     public function store()
     {
+        $imageFile = $this->request->getFile('image');
+        $imageName = null;
+
+        if ($imageFile && $imageFile->isValid() && !$imageFile->hasMoved()) {
+            $imageName = uniqid('instructor_', true) . '.' . $imageFile->getExtension();
+            $imageFile->move('uploads/instructor_picture', $imageName); // Perbaikan path
+        }
+
         $this->instructorModel->save([
             'name' => $this->request->getPost('name'),
             'email' => $this->request->getPost('email'),
             'phone' => $this->request->getPost('phone'),
-            'expertise' => $this->request->getPost('expertise')
+            'expertise' => $this->request->getPost('expertise'),
+            'image' => $imageName ? 'uploads/instructor_picture/' . $imageName : null, // Tangani jika tidak ada gambar
         ]);
+
         return redirect()->to('/admin/instructors');
     }
+
 
     public function edit($id)
     {
@@ -44,6 +55,7 @@ class InstructorController extends Controller
 
     public function update($id)
     {
+        
         $this->instructorModel->update($id, [
             'name' => $this->request->getPost('name'),
             'email' => $this->request->getPost('email'),

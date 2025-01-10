@@ -16,6 +16,10 @@ class CreateInstructorsTable extends Migration
                 'unsigned'       => true,
                 'auto_increment' => true,
             ],
+            'image' => [
+                'type' => 'VARCHAR',
+                'constraint' => 255
+            ],
             'name' => [
                 'type'       => 'VARCHAR',
                 'constraint' => '255'

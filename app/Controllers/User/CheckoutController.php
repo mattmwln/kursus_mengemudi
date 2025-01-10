@@ -76,8 +76,8 @@ class CheckoutController extends BaseController
             if ($image->isValid() && in_array($image->getMimeType(), ['image/jpeg', 'image/png', 'image/jpg'])) {
                 // Tentukan lokasi folder untuk menyimpan gambar
                 $imagePath = FCPATH  . 'uploads/payment_images/';
-
-                // Jika folder belum ada, buat foldernya
+                
+                // Jika folder belum ada, buat foldernya=
                 if (!is_dir($imagePath)) {
                     mkdir($imagePath, 0777, true);
                 }
