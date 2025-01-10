@@ -43,7 +43,7 @@
                         <ul class="list-group mb-3">
                             <li class="list-group-item d-flex justify-content-between align-items-center">
                                 Jadwal
-                                <span><?= esc($schedule['schedule_date']); ?></span>
+                                <span>Tanggal <?= date('d F Y' , strtotime(esc($schedule['schedule_date']))); ?> | Pukul <?= esc($schedule['schedule_time'])?> </span>
                             </li>
                             <li class="list-group-item d-flex justify-content-between align-items-center">
                                 Paket

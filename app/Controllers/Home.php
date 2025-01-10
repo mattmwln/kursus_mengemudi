@@ -2,6 +2,7 @@
 
 namespace App\Controllers;
 
+use App\Models\CourseModel;
 use App\Models\ScheduleModel;
 
 class Home extends BaseController
@@ -9,6 +10,7 @@ class Home extends BaseController
     public function index()
     {
         $scheduleModel = new ScheduleModel();
+        $courseModel = new CourseModel();
         
         $schedules = $scheduleModel->findAll();
         // Tambahkan relasi manual ke setiap jadwal
@@ -17,8 +19,14 @@ class Home extends BaseController
             $schedule['getInstructor'] = $scheduleModel->getInstructor($schedule['instructor_id']);
         }
 
-        $data['schedules'] = $schedules;
+        $courses = $courseModel->findAll();
 
+        $data = [
+            'schedules' => $schedules,
+            'courses' => $courses,
+        ];
+
+        
         return view('welcome_message', $data);
     }
 }

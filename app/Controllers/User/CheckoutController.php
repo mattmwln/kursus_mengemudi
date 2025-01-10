@@ -75,7 +75,7 @@ class CheckoutController extends BaseController
             // Cek apakah file tersebut gambar
             if ($image->isValid() && in_array($image->getMimeType(), ['image/jpeg', 'image/png', 'image/jpg'])) {
                 // Tentukan lokasi folder untuk menyimpan gambar
-                $imagePath = WRITEPATH . 'uploads/payment_images/';
+                $imagePath = FCPATH  . 'uploads/payment_images/';
 
                 // Jika folder belum ada, buat foldernya
                 if (!is_dir($imagePath)) {
@@ -93,11 +93,11 @@ class CheckoutController extends BaseController
 
                 // Update field payment_image dengan path file yang telah di-upload
                 $registerModel->update($registerId, [
-                    'payment_image' => $imagePath . $newFileName,
+                    'payment_image' => 'uploads/payment_images/' . $newFileName, // Simpan path relatif
                 ]);
 
                 // Redirect atau beri respon setelah berhasil upload
-                return redirect()->to('/')->with('message', 'Payment image uploaded successfully');
+                return view('pages/success');
             } else {
                 // Jika file bukan gambar, kirimkan error
                 return redirect()->back()->with('error', 'Please upload a valid image (jpeg, jpg, or png)');

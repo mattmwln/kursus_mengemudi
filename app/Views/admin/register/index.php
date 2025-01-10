@@ -3,6 +3,7 @@
 <?= $this->extend('admin/layout'); ?>
 
 <?= $this->section('content'); ?>
+
 <div class="container mx-auto px-4 py-6">
     <h1 class="text-3xl font-semibold mb-6">Daftar Pendaftaran</h1>
     
@@ -17,6 +18,8 @@
                     <th class="px-4 py-2">Nomor Hp</th>
                     <th class="px-4 py-2">Jenis Kelamin</th>
                     <th class="px-4 py-2">Paket Kursus</th>
+                    <th class="px-4 py-2">Instruktur</th>
+                    <th class="px-4 py-2">Bukti Bayar</th>
                     <th class="px-4 py-2">Aksi</th>
                 </tr>
             </thead>
@@ -29,10 +32,29 @@
                             <td class="px-4 py-2 text-sm"><?= $register['name']; ?></td>
                             <td class="px-4 py-2 text-sm"><?= $register['no_hp']; ?></td>
                             <td class="px-4 py-2 text-sm"><?= $register['gender']; ?></td>
-                            <td class="px-4 py-2 text-sm"><?= esc($register['getSchedule']->name); ?></td>
-                            <td class="px-4 py-2">
-                                <a href="<?= base_url('admin/schedules/edit/' . $schedule['id']); ?>" class="btn-secondary btn-sm">Edit</a>
-                                <a href="<?= base_url('admin/schedules/delete/' . $schedule['id']); ?>" class="btn-danger btn-sm ml-2" onclick="return confirm('Yakin ingin menghapus jadwal ini?')">Hapus</a>
+                            <td class="px-4 py-2 text-sm"><?= $register['course_name']; ?> | <?= date('d F Y', strtotime($register['schedule_date'])); ?> | <?= $register['schedule_time']; ?></td>
+                            <td class="px-4 py-2 text-sm"><?= $register['instructors_name']?></td>
+                            <td class="px-4 py-2 text-sm">
+                                <a href="<?= base_url($register['payment_image']); ?>" target="_blank" class="btn btn-primary">BUKA</a>
+                            </td>
+                            <td class="px-4 py-2 text-sm">
+                                 <form action="<?= base_url('admin/register/update-status/' . $register['id']); ?>" method="POST">
+                                <!-- CSRF Token -->
+                                <?= csrf_field(); ?>
+
+                                <!-- Dropdown untuk memilih status -->
+                                <select name="status" class="px-4 py-2 border rounded-md">
+                                    <option value=""><?= $register['status']?></option>
+                                    <option value="PENDING" <?= ($register['status'] == 'PENDING') ? 'selected' : ''; ?>>PENDING</option>
+                                    <option value="PROSES" <?= ($register['status'] == 'PROSES') ? 'selected' : ''; ?>>PROSES</option>
+                                    <option value="SELESAI" <?= ($register['status'] == 'SELESAI') ? 'selected' : ''; ?>>SELESAI</option>
+                                </select>
+
+                                <!-- Tombol submit -->
+                                <button type="submit" class="px-4 py-2 mt-2 bg-green-500 text-dark rounded-md hover:bg-green-600">
+                                    Update Status
+                                </button>
+                            </form>
                             </td>
                         </tr>
                     <?php endforeach; ?>
@@ -46,4 +68,5 @@
         </table>
     </div>
 </div>
+
 <?= $this->endSection(); ?>

@@ -55,4 +55,17 @@ class RegisterModel extends Model
                         ->get()
                         ->getRow();
     }
+
+    public function getRegistersWithDetails()
+    {
+        return $this->db->table('registers')
+                        ->select('registers.*, schedules.schedule_time,schedules.schedule_date, schedules.course_id, courses.name as course_name, instructors.name as instructors_name')
+                        ->join('schedules', 'schedules.id = registers.schedule_id', 'left')
+                        ->join('courses', 'courses.id = schedules.course_id', 'left')
+                        ->join('instructors', 'instructors.id = schedules.instructor_id', 'left')
+                        ->get()
+                        ->getResultArray();
+    }
+
+
 }

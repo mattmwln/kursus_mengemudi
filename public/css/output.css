@@ -1202,3 +1202,51 @@ video {
     text-align: left;
   }
 }
+
+ /* Styling untuk dropdown */
+ .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-button {
+  padding: 10px 15px;
+  background-color: #f0ad4e;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* Menu dropdown yang tersembunyi secara default */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  z-index: 1;
+}
+
+/* Menampilkan dropdown ketika di-klik */
+.dropdown-menu.show {
+  display: block;
+}
+
+/* Styling untuk tombol dalam menu dropdown */
+.dropdown-menu button {
+  padding: 10px 15px;
+  width: 100%;
+  text-align: left;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.dropdown-menu button:hover {
+  background-color: #f1f1f1;
+}
