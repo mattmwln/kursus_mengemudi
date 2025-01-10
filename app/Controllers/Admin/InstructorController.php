@@ -55,12 +55,29 @@ class InstructorController extends Controller
 
     public function update($id)
     {
-        
+        $imageFile = $this->request->getFile('image');
+        $imageName = null;
+
+        $instructor = $this->instructorModel->find($id);
+
+        if($imageFile && $imageFile->isValid() && !$imageFile->hasMoved()) {
+
+            if($instructor['image'] && file_exists($instructor['image'])) {
+                unlink($instructor['image']);
+            }
+
+            $imageName = uniqid('instructor_', true) . '.' . $imageFile->getExtension();
+            $imageFile->move('uploads/instructor_picture', $imageName);
+        } else {
+            $imageName = $instructor['image'];
+        }
+
         $this->instructorModel->update($id, [
             'name' => $this->request->getPost('name'),
             'email' => $this->request->getPost('email'),
             'phone' => $this->request->getPost('phone'),
-            'expertise' => $this->request->getPost('expertise')
+            'expertise' => $this->request->getPost('expertise'),
+            'image' => $imageName ? 'uploads/instructor_picture/' . $imageName : $instructor['image'], 
         ]);
         return redirect()->to('/admin/instructors');
     }

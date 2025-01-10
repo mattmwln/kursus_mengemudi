@@ -3,10 +3,14 @@
 <?= $this->section('content'); ?>
 <div class="container mx-auto p-4">
     <h1 class="text-2xl font-bold mb-4">Edit Instruktur</h1>
-    <form action="<?= base_url('admin/instructors/update/' . $instructor['id']); ?>" method="POST" class="space-y-4">
+    <form action="<?= base_url('admin/instructors/update/' . $instructor['id']); ?>" method="POST" class="space-y-4" enctype="multipart/form-data">
         <div>
             <label for="name" class="form-label">Nama</label>
             <input type="text" id="name" name="name" value="<?= $instructor['name']; ?>" class="form-input" required>
+        </div>
+        <div class="form-group">
+            <label for="image" class="form-label">Foto</label>
+            <input type="file" class="form-input" id="image" name="image" required>
         </div>
         <div>
             <label for="email" class="form-label">Email</label>
