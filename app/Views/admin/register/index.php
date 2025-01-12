@@ -10,6 +10,8 @@
 
     <!-- Table -->
     <div class="overflow-x-auto bg-white rounded-lg shadow-md">
+    <a href="<?= base_url('admin/register/download-pdf'); ?>" class="btn btn-primary mb-4 p-3">Unduh Pdf</a>
+
         <table class="min-w-full table-auto text-sm text-gray-700 border-separate border-spacing-0 border border-gray-200">
             <thead>
                 <tr class="bg-gray-100">

@@ -2,6 +2,7 @@
 
 namespace App\Controllers\Admin;
 
+use Dompdf\Dompdf;
 use App\Models\RegisterModel;
 use App\Controllers\BaseController;
 
@@ -44,5 +45,30 @@ class RegisterController extends BaseController
         return redirect()->to('/admin/register');
     }
     
+    public function exportToPdf()
+    {
+         // Ambil data dari database
+         $registerModel = new RegisterModel();
+         $registers = $registerModel->getRegistersWithDetails();
+ 
+         // Siapkan data untuk view
+         $data['registers'] = $registers;
+ 
+         // Render HTML ke string
+         $html = view('admin/register/pdf', $data);
+ 
+         // Inisialisasi Dompdf
+         $dompdf = new Dompdf();
+         $dompdf->loadHtml($html);
+ 
+         // Atur orientasi kertas dan ukuran
+         $dompdf->setPaper('A4', 'landscape');
+ 
+         // Render PDF
+         $dompdf->render();
+ 
+         // Unduh file PDF
+         $dompdf->stream("registers.pdf", ["Attachment" => 1]); 
+    }
 
 }

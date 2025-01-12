@@ -63,3 +63,12 @@ in APPPATH\Controllers\Admin\InstructorController.php on line 34.
  4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
  6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2025-01-10 12:20:27 --> session_start(): Ignoring session_start() because a session is already active (started from D:\project_ci\kursus_mengemudi\system\Session\Session.php on line 896)
+in APPPATH\Controllers\Admin\InstructorController.php on line 14.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'session_start(): Ignoring session_start() because a session is already active (started from D:\\project_ci\\kursus_mengemudi\\system\\Session\\Session.php on line 896)', 'APPPATH\\Controllers\\Admin\\InstructorController.php', 14)
+ 2 APPPATH\Controllers\Admin\InstructorController.php(14): session_start()
+ 3 SYSTEMPATH\CodeIgniter.php(860): App\Controllers\Admin\InstructorController->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(459): CodeIgniter\CodeIgniter->createController()
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

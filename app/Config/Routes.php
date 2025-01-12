@@ -68,7 +68,7 @@ $routes->group('admin', ['filter' => 'auth'], function($routes) {
     $routes->get('register', 'Admin\RegisterController::index');
     $routes->get('uploads/payment_images/(:segment)', 'Admin\RegisterController::getImage/$1');
     $routes->post('register/update-status/(:num)', 'Admin\RegisterController::updateStatus/$1');
-
+    $routes->get('register/download-pdf', 'Admin\RegisterController::exportToPdf');
     // $routes->get('register/create', 'Admin\ScheduleController::create');
     // $routes->post('register/store', 'Admin\ScheduleController::store');
     // $routes->get('register/edit/(:num)', 'Admin\ScheduleController::edit/$1');

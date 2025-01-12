@@ -11,6 +11,7 @@ class InstructorController extends Controller
 
     public function __construct()
     {
+        
         $this->instructorModel = new InstructorModel();
     }
 
@@ -31,7 +32,14 @@ class InstructorController extends Controller
         $imageName = null;
 
         if ($imageFile && $imageFile->isValid() && !$imageFile->hasMoved()) {
+
             $imageName = uniqid('instructor_', true) . '.' . $imageFile->getExtension();
+
+             // Pastikan folder tujuan ada dan dapat ditulis
+            if (!is_dir('uploads/instructor_picture')) {
+                mkdir('uploads/instructor_picture', 0755, true); // Membuat folder jika belum ada
+            }
+
             $imageFile->move('uploads/instructor_picture', $imageName); // Perbaikan path
         }
 
@@ -89,19 +97,20 @@ class InstructorController extends Controller
     }
 
     public function bulkDelete()
-{
-    // Mengambil array ID instruktur yang dipilih
-    $selectedInstructors = $this->request->getPost('selected_instructors');
+    {
+        // Mengambil array ID instruktur yang dipilih
+        $selectedInstructors = $this->request->getPost('selected_instructors');
 
-    if ($selectedInstructors && is_array($selectedInstructors)) {
-        foreach ($selectedInstructors as $instructorId) {
-            $this->instructorModel->delete($instructorId);
+        if ($selectedInstructors && is_array($selectedInstructors)) {
+            foreach ($selectedInstructors as $instructorId) {
+                $this->instructorModel->delete($instructorId);
+            }
+
+            return redirect()->to('/admin/instructors')->with('success', 'Instruktur yang dipilih berhasil dihapus.');
         }
 
-        return redirect()->to('/admin/instructors')->with('success', 'Instruktur yang dipilih berhasil dihapus.');
+        return redirect()->to('/admin/instructors')->with('error', 'Tidak ada instruktur yang dipilih untuk dihapus.');
     }
 
-    return redirect()->to('/admin/instructors')->with('error', 'Tidak ada instruktur yang dipilih untuk dihapus.');
-}
-
+   
 }
