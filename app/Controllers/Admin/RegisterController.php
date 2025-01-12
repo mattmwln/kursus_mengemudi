@@ -71,4 +71,13 @@ class RegisterController extends BaseController
          $dompdf->stream("registers.pdf", ["Attachment" => 1]); 
     }
 
+    public function delete($id)
+    {
+        $registerModel = new RegisterModel();
+
+        $registerModel->delete($id);
+
+        return redirect()->to('/admin/register');
+    }
+
 }

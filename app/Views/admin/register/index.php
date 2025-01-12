@@ -23,6 +23,7 @@
                     <th class="px-6 py-3 border-b border-gray-300 text-left">Instruktur</th>
                     <th class="px-6 py-3 border-b border-gray-300 text-left">Bukti Bayar</th>
                     <th class="px-6 py-3 border-b border-gray-300 text-left">Aksi</th>
+                    <th class="px-6 py-3 border-b border-gray-300 text-left">Hapus</th>
                 </tr>
             </thead>
             <tbody>
@@ -57,6 +58,11 @@
                                         Update Status
                                     </button>
                                 </form>
+                            </td>
+                            <td>
+                                 <a href="<?= base_url('admin/register/delete/' . $register['id']); ?>" class="btn-danger btn-sm px-4 py-2 rounded-md hover:bg-red-600" onclick="return confirm('Yakin ingin menghapus instruktur ini?')">
+                                    <i class="bi bi-trash mr-1"></i>
+                                </a>
                             </td>
                         </tr>
                     <?php endforeach; ?>
